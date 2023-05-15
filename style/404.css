@@ -1,0 +1,32 @@
+* {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/images/th-2575617371.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Matura';
+    src: url("MATURASC.TTF") format("truetype");
+}
+
+.text {
+    font-family: 'Matura';
+    font-size: 48px;
+    color: red;
+}
+
+span {
+    color: black;
+    background: none;
+}
+
+a {
+    background: none;
+    text-align: center;
+}
