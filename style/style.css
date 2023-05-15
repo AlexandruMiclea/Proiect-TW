@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-.header{
+header{
     position: fixed;
     z-index: 9999;
     top:0;
@@ -71,11 +71,12 @@
 
 .dropcontent {
     display: none;
+    visibility: hidden;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
 
 .dropcontent a {
     color: black;
@@ -92,6 +93,7 @@
 .dropcontent a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropcontent {
+    visibility: visible;
     display: block;
     position: fixed;
     right: 30px;
@@ -99,3 +101,9 @@
 }
 
 .dropdown:hover .dropbutton {background-color: rgb(138, 89, 134);}
+
+main {
+    background: url("/images/th-2575617371.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 10vh;
+}
