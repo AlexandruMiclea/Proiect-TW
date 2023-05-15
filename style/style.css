@@ -35,7 +35,7 @@ header{
 .titlu span{
     margin: auto;
     display: inline-block;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: 'Matura';
     padding-inline: 5px;
     color: rgb(255,0,0);
@@ -50,6 +50,19 @@ header{
 }
 .logo img{
     max-height: 80px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo:hover {
+    animation: rotation 1s linear 0s;
 }
 
 .dropbutton {
@@ -72,7 +85,7 @@ header{
 .dropcontent {
     display: none;
     visibility: hidden;
-    background-color: #f1f1f1;
+    background-color: rgb(102, 71, 99);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -90,7 +103,7 @@ header{
     width: 100vw;
 }
 
-.dropcontent a:hover {background-color: #ddd;}
+.dropcontent a:hover {background-color: rgb(117, 75, 99);}
 
 .dropdown:hover .dropcontent {
     visibility: visible;
@@ -98,12 +111,56 @@ header{
     position: fixed;
     right: 30px;
     z-index: 3;
+    transform: translateY(-10vh) ;
 }
 
 .dropdown:hover .dropbutton {background-color: rgb(138, 89, 134);}
 
 main {
-    background: url("/images/th-2575617371.jpg") no-repeat;
+    height: 500vh;
+    background: repeating-linear-gradient(180deg, rgb(48, 48, 48),rgb(85, 50, 50),rgb(116, 45, 45));
     background-size: cover;
+    margin-top: 12vh;
+    text-align: center;
+    color: rgb(60, 0, 0)
+}
+
+.grid-container {
+    padding-left: 10vw;
+    padding-right: 10vw;
     padding-top: 10vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(80, 51, 77), rgb(117, 75, 99), rgb(102, 71, 99));
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.grid-item img {
+    flex: 1;
+    width: 10vw;
+    max-height: 200px;
+}
+
+.grid-item h2 {
+    flex: 3;
+    margin-left: 20px;
+}
+
+.item2 {
+    color: black;
+    border: 3px solid black;
+    background-color: rgb(113, 83, 100);
+    height: 20vh;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
