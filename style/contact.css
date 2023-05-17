@@ -139,3 +139,47 @@ main {
     color: black;
 }
 
+.submit-comment-form {
+    color: black;
+    border: 3px solid black;
+    background: linear-gradient(rgb(80, 51, 77), rgb(117, 75, 99), rgb(102, 71, 99));
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.submit-comment-form > * {
+    background-color: rgb(117, 75, 99);
+    border-color: black;
+    color: aliceblue;
+}
+
+.submit-comment-form > textarea {
+    resize: none;
+    margin-bottom: 2vh;
+    width: 70vw;
+}
+
+#submit {
+    border: 1px solid black;
+    border-radius: 0%;
+    margin: 0.5vh;
+}
+.comment {
+    color: white;
+    border: 3px solid black;
+    background: linear-gradient(rgb(80, 51, 77), rgb(117, 75, 99), rgb(102, 71, 99));
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.commentsection {
+    background: linear-gradient(rgb(80, 51, 77), rgb(117, 75, 99), rgb(102, 71, 99));
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
