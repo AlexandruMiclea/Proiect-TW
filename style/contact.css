@@ -134,7 +134,7 @@ main {
     border: 3px solid black;
     background: linear-gradient(rgb(80, 51, 77), rgb(117, 75, 99), rgb(102, 71, 99));
     height: auto;
-    margin-top: 20vh;
+    margin-top: 10vh;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -164,11 +164,12 @@ main {
     resize: none;
     margin-bottom: 2vh;
     width: 70vw;
+    white-space: pre-line;
 }
 
-#submit {
+#submitx {
     border: 1px solid black;
-    border-radius: 0%;
+    border-radius: 10%;
     margin: 0.5vh;
 }
 .comment {
@@ -188,4 +189,12 @@ main {
     margin-top: 10vh;
     margin-left: 10vw;
     margin-right: 10vw;
+}
+
+.sterge{
+    color: red;
+    border-radius: 10%;
+    border: 1px solid black;
+    max-width: 20px;
+    align-self: last baseline;
 }
