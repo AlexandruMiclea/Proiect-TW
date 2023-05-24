@@ -133,6 +133,12 @@ main {
     grid-template-columns: 1fr;
     gap: 20px;
 }
+@media (max-width: 1000px){
+    .grid-container{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
 
 .grid-item {
     display: flex;

@@ -50,7 +50,7 @@
         </div>
 
         <form class="submit-comment-form">
-            <input type="text" id="nume" placeholder="Nume..." name="text" required/>
+            <input type="text" id="nume" placeholder="Nume..." name="text" pattern="\b[a-zA-Z]+\s[a-zA-Z]+\b" maxlength="32" required/>
             <input type="email" id="email" placeholder="Email..." name="email" required/>
             <input type="text" id="titlucom" placeholder="Titlu..." name="titlu" required/>
             <button id="submitx">Adauga comentariu</button>

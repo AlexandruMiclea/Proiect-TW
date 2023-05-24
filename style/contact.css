@@ -139,6 +139,12 @@ main {
     margin-right: 10vw;
 }
 
+@media (max-width: 1000px){
+    .item2{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
 #blk {
     color: black;
 }

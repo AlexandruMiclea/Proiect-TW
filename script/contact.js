@@ -32,10 +32,8 @@ window.onload = () => {
         commentDate.style.textAlign = "left";
         const commentElem = document.createElement('div');
         commentElem.style.display = "grid";
-        commentElem.style.gridTemplateColumns = "repeat(4,1fr)";
+        commentElem.style.gridTemplateColumns = "repeat(3,1fr)";
         commentElem.style.margin = "1vh";
-        const butonSters = document.createElement('button');
-        butonSters.classList.add('sterge');
 
         const commentContent = document.createElement('p');
         commentContent.classList.add('commentcontent');
@@ -48,7 +46,6 @@ window.onload = () => {
         commentElem.append(commentDate);
         commentElem.append(commentName);
         commentElem.append(commentMail);
-        commentElem.append(butonSters);
         commentElem.style.margin = "2vh";
         commentDiv.append(commentElem);
         commentTitle.style.margin = "2vh";
@@ -78,23 +75,22 @@ window.onload = () => {
         commentDate.style.textAlign = "left";
         const commentElem = document.createElement('div');
         commentElem.style.display = "grid";
-        commentElem.style.gridTemplateColumns = "repeat(4,1fr)";
+        commentElem.style.gridTemplateColumns = "repeat(3,1fr)";
         commentElem.style.margin = "1vh";
-        const butonSters = document.createElement('button');
-        butonSters.classList.add('sterge');
 
         const commentContent = document.createElement('p');
         commentContent.classList.add('commentcontent');
         commentContent.style.padding = "3vh";
         commentContent.textContent = comentariu.value;
         commentTitle.textContent = titlu.value;
+        // validate name using regex
+
         commentName.textContent = nume.value;
         commentMail.textContent = email.value;
         commentMail.style.textAlign = "right";
         commentElem.append(commentDate);
         commentElem.append(commentName);
         commentElem.append(commentMail);
-        commentElem.append(butonSters);
         commentElem.style.margin = "2vh";
         commentDiv.append(commentElem);
         commentTitle.style.margin = "2vh";
